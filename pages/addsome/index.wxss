@@ -1,0 +1,75 @@
+/* pages/addsome/index.wxss */
+.content {
+  background: #efefef;
+  height: 100vh;
+}
+.content .page-body {
+  padding:22rpx 22rpx 0rpx 22rpx;
+  background: #fff;
+
+}
+.image-plus-vertical {
+  width: 160rpx;
+  height: 160rpx;
+  border: 6rpx dashed #efefef;
+  border-radius: 24rpx;
+  position: relative;
+  float: left
+}
+.image-plus-vertical::after ,
+.image-plus-vertical::before{
+  content: " ";
+  font-size: 50rpx;
+  position: absolute;
+  top: 77rpx;
+  left: 33rpx;
+  height: 6rpx;
+  width: 90rpx;
+  background: #efefef
+}
+.image-plus-vertical::before {
+  transform: rotateZ(90deg)
+}
+.textplace {
+  width: 666rpx;
+  background-color: #fff;
+  display: block;
+  height: 300rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+  line-height: 1.5;
+  margin-top: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  margin-bottom: 20rpx
+}
+.setinfo {
+  margin-top: 22rpx;
+  background-color: #fff;
+  font-size: 26rpx;
+}
+.setinfo .liinset {
+  border-bottom:1px solid #f9f9f9;
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}
+.setinfo .liinset .icoandtext{
+  float: left
+}
+.setinfo .liinset .rightico{
+  float: right;
+}
+.setinfo .weui-label {
+  font-size: 28rpx;
+  line-height: 30rpx;
+  padding: 10rpx 0rpx
+}
+.setinfo  .weui-input{
+  text-align: right;
+  font-size: 28rpx;
+
+  padding: 10rpx 0rpx
+}
+.weui-cells:before{
+  border-top: none
+}

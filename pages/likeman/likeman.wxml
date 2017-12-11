@@ -1,0 +1,5 @@
+<view class="container">
+    <ul class="likelist">
+      <li wx:for="{{list}}" wx:key="id"><view class="ico {{item.color}}" alt="{{item.name}}"></view></li>
+    </ul>
+</view>

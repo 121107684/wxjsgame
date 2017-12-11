@@ -1,0 +1,94 @@
+.headertitle{
+  height: 460rpx;
+  background-color: #fde101;
+  box-sizing: border-box;
+  padding-top: 0rpx
+}
+.userimg {
+  width: 220rpx;
+  height: 220rpx;
+  border: 8rpx solid #efefef;
+  margin: 60rpx auto 0;
+  background-color: #e0e0e0;
+  position: relative;
+  border-radius: 50%;
+}
+.userimg image{
+  display: block;
+  width: 220rpx;
+  height: 220rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.userimg .absbtn{
+  position: absolute;
+  top: 0rpx;
+  right:-70rpx;
+  width: 64rpx;
+  height: 64rpx;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.userimg .absbtn::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rpx;
+  height: 1rpx;
+  border-width: 6rpx 14rpx 6rpx 0rpx;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  top: 27rpx;
+  left: -14rpx;
+  
+}
+.userinfo {
+  text-align: center
+}
+.userinfo .titles,
+.userinfo .leves {
+  display: inline-block;
+  height: 32rpx;
+  border-radius: 16rpx;
+  padding: 0rpx 20rpx;
+  font-size: 24rpx;
+  line-height: 32rpx;
+  background-color: #f9bb05;
+  margin-right: 10rpx;
+  color:#fff;
+}
+.userinfo .leves {
+  background-color: #f87a63;
+  font-style: italic
+}
+.aboutbox {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  padding: 18rpx 160rpx 0
+}
+.aboutbox .flaxbox {
+  flex: 1;
+  font-size: 28rpx
+}
+.aboutbox .flaxbox .aboutitle {
+  font-size: 24rpx
+}
+
+.setinfo {
+  padding-left: 40rpx
+}
+.setinfo .liinset {
+  border-bottom:1px solid #f9f9f9;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+}
+.setinfo .liinset .icoandtext{
+  float: left
+}
+.setinfo .liinset .rightico{
+  float: right;
+  padding-right: 80rpx
+}
+

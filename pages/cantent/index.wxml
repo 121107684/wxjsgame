@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<import src="../component/nav/index.wxml" />
+<template is="nav" data="{{ ...__lgpanel__ }}" />
+<view class="container clearfix">
+  <view class="panel">
+    <view class='panel-heading'>
+      <view class='userico'>
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996"></image>
+      </view>
+      <view class="userinfo">
+        <view class="username">这贯穿乱世的雷霆</view>
+        <view class="useradd">北京 海淀 刚刚</view>
+      </view>
+      <view class="titleset">
+        <i class="iconfont icon-jiankang"></i>
+      </view>
+    </view>
+    <view class="panel-body">
+      <view class="imagesin">
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+      </view>
+      <view class="infotext">当你设计的时候，你可以使用任何你喜欢的颜色，但是图标必须是一个纯色。确保每个图标的尺寸大小是相同的。有一个图标更高或者更宽，会很难创建一个一致的字体。在这里，我们不得不减少飞艇图标的宽度，以便它匹配其他图标。</view>
+    </view>
+    <view class='panel-footer  clearfix'>
+      <view class="otheruser clearfix">
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+        <image src="http://p4.sinaimg.cn/1622367875/180/36581388733996" mode="widthFix"></image>
+      </view>
+      <view class="aboutyou">243人觉得很赞</view>
+      <view class="footerico">
+        <view class="likeyou"><i class="iconfont icon-jiankang"></i>234</view>
+        <view class="sayyou"><i class="iconfont icon-xinxi"></i>234</view>
+      </view>
+    </view>
+  </view>
+</view>

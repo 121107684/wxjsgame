@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="headertitle">
+    <view class="userimg">
+      <image mode='widthFix' src="{{userInfo.avatarUrl}}"></image>
+      <view class="absbtn" bindtap="bindViewTap"></view>
+    </view>
+    <view class="userinfo" bindtap="userinfo">
+      <view class="titles">帅哥</view>
+      <view class="titles">美女</view>
+      <view class="titles">大屁股</view>
+      <view class="leves">LV.1</view>
+    </view>
+    <view class="aboutbox">
+      <view class="flaxbox">
+        <view class="aboutitle">共同爱好人数</view>
+        <view class="aboutnum">436</view>
+      </view>
+      <view class="flaxbox">
+        <view class="aboutitle">总关注人数</view>
+        <view class="aboutnum">436</view>
+      </view>
+    </view>
+  </view>
+  <view class="setinfo">
+    <view class="liinset">
+      
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers"></view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers"></view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers"></view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers">234</view>
+      </view>
+    </view>
+  </view>
+</view>

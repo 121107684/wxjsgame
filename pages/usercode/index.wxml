@@ -1,0 +1,7 @@
+<!--pages/usercode/index.wxml-->
+<view class="content">
+<view class="canvas-box">
+  <canvas  hidden="{{canvasHidden}}" style="width: 200rpx;height: 200rpx;background:#f0f0f0;" canvas-id="mycanvas"/>
+</view>
+</view>
+ 

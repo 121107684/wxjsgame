@@ -1,0 +1,67 @@
+/* pages/userlist/index.wxss */
+.top-tap {
+  display: flex;
+}
+.top-tap view {
+  flex: 1;
+  text-align: center;
+  font-size: 26rpx;
+  padding: 15rpx 0rpx
+}
+.page-body-info {
+  background-color: transparent;
+}
+.btn-area{
+  margin-top: 300rpx;
+}
+.page-body-text{
+  padding: 22rpx;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  
+}
+.container .userimg{
+  width: 90rpx;
+  height: 90rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.container .userimg image{
+  width: 90rpx
+}
+.container .username {
+  font-size: 32rpx;
+  line-height: 44rpx;
+  text-indent: 1em;
+  display: flex;
+  justify-content: left;
+  align-content: left;
+  align-items: left;
+}
+.container .addres{
+  font-size: 26rpx;
+  line-height: 44rpx;
+  text-indent: 1em;
+  color: #777
+}
+.container .titles{
+  flex: 1
+}
+.container.icon {
+  width: 45rpx
+}
+.container .username .lvcla,
+.container .username .hassome{
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 14rpx;
+  background-color: #ff624a;
+  height: 28rpx;
+  line-height: 28rpx;
+  margin-left: 12rpx;
+  text-align: center;
+  padding: 2rpx 10rpx
+}
+.container .username .hassome{
+background-color: #fec600
+}

@@ -1,0 +1,31 @@
+<!--pages/userinfo/index.wxml-->
+<view>
+  <view class="setinfo">
+    <view class="liinset listimg">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers"></view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers"></view>
+      </view>
+    </view>
+    <view class="liinset">
+      <view class="icoandtext">我的主页</view>
+      <view class="rightico">
+        <view class="numbers">234</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cantent/index",
+    "pages/likeman/likeman",
+    "pages/userlist/index",
+    "pages/addsome/index",
+    "pages/userinfo/index",
+    "pages/usercode/index",
+    "pages/setting/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fde101",
+    "navigationBarTitleText": "发布",
+    "navigationBarTextStyle":"black"
+  }
+}

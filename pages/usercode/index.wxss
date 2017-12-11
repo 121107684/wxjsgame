@@ -1,0 +1,7 @@
+/* pages/usercode/index.wxss */
+.content{
+  width:600rpx;
+  margin: 75rpx auto;
+  height: 900rpx;
+  background-color: aliceblue;
+}

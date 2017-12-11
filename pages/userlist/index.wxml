@@ -1,0 +1,39 @@
+<!--pages/userlist/index.wxml-->
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
+
+<view class="top-tap">
+  <view>关注我的</view>
+  <view>我的关注</view>
+</view>
+<view class="container">
+  <template is="head" data="{{title: ''}}" />
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <view class="page-body-text">
+
+          <view class='userimg'>
+            <image mode='widthFix' src="{{userInfo.avatarUrl}}"></image>
+          </view>
+          <view class="titles">
+            <view class="username">
+              <view>thistest</view>
+              <view class="lvcla">lv1</view>
+              <view class="hassome">有发布</view>
+            </view>
+            <view class="addres">距离我2.0km</view>
+          </view>
+          <view class="iconbox">
+            <icon class="icon-box-img" type="info" size="26"></icon>
+          </view>
+        </view>
+      </view>
+      <!-- <view class="btn-area">
+        <button bindtap="stopPullDownRefresh">停止刷新</button>
+      </view> -->
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>

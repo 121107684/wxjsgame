@@ -1,0 +1,9 @@
+<template name="nav">
+ <view class="footer_nav">
+    <view class='nav_btn xc'><b>秀场</b></view>
+    <view class='nav_btn'>
+      <view class='fb'>发布</view>  
+    </view>
+    <view class='nav_btn my'>我的</view>
+  </view>
+</template>

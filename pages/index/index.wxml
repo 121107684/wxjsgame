@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text wx:if="{{false}}" class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="titabout">毒哥提示</view>
+      <view class="bigtext">选择你的性别</view>
+      <view class="listblock">
+          <view bindtap="toast" data-sex="boy" class='sexbtn'>♂</view>
+          <view bindtap="toast" data-sex="girl" class='sexbtn'>♀</view>
+      </view>
+
+    </block>
+  </view>
+</view>
+ 

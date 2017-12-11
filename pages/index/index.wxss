@@ -1,0 +1,79 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.container{
+  background: #eee;
+  height: 100vh
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+
+.titabout {
+  font-size: 36rpx;
+  color: #aaa;
+}
+
+.bigtext {
+  font-size: 42rpx;
+  font-weight: bold;
+}
+
+.listblock {
+  display: flex;
+  width: 540rpx;
+  margin-top: 120rpx;
+  justify-content: space-around;
+}
+
+.listblock .sexbtn {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  box-shadow: 5px 15px 25px -4px rgba(0, 0, 0, 0.5),
+                inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2),
+                0 -10px 15px -1px rgba(255, 255, 255, 0.6),
+                inset 0 3px 4px -1px rgba(255, 255, 255, 0.2),
+                inset 0 0 5px 1px rgba(255, 255, 255, 0.8),
+                inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 70rpx;
+  font-weight: bold;
+  
+}
+.listblock .sexbtn:first-child{
+  text-shadow: 0px 0px 4rpx #ff9933;
+  color: #ff9933
+}
+.listblock .sexbtn:last-child{
+  text-shadow: 0px 0px 4rpx #cccc00;
+  color: #cccc00
+}
+.listblock .sexbtn:active{
+      box-shadow:0 15px 25px -4px rgba(0, 0, 0, 0.4), inset 0 -8px 25px -1px rgba(255, 255, 255, 0.9), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 8px 20px 0 rgba(0, 0, 0, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.6)
+}

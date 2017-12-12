@@ -1,7 +1,9 @@
 //index.js
+import navpub from "../component/nav/index.js"
 //获取应用实例
 const app = getApp()
 Page({
+  ...navpub, 
   data: {
     
   },
@@ -12,6 +14,6 @@ Page({
     })
   },
   onLoad: function () {
-    console.log(app)
+    console.log(this)
   }
 })

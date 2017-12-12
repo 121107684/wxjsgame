@@ -1,2 +1,4 @@
 /**app.wxss**/
-@import "./pages/common/index.wxss";
+@import "./pages/component/nav/index.wxss";
+@import "./pages/common/lib/weui.wxss";
+.clearfix{overflow:hidden;_zoom:1;}

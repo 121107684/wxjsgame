@@ -4,7 +4,7 @@
     <block wx:if="{{imageSrc}}">
       <image src="{{imageSrc}}" class="image" mode="aspectFit"></image>
     </block>
-    <view class="image-plus image-plus-nb" bindtap="chooseImage">
+    <view class="image-plus image-plus-nb clearfix" bindtap="chooseImage">
       <view class="image-plus-horizontal"></view>
       <view class="image-plus-vertical"></view>
     </view>

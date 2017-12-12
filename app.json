@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/index/index",
+    
     "pages/cantent/index",
+    "pages/index/index",
     "pages/likeman/likeman",
     "pages/userlist/index",
     "pages/addsome/index",

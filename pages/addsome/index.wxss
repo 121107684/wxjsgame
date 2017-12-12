@@ -60,13 +60,13 @@
   float: right;
 }
 .setinfo .weui-label {
-  font-size: 28rpx;
+  font-size: 32rpx;
   line-height: 30rpx;
   padding: 10rpx 0rpx
 }
 .setinfo  .weui-input{
   text-align: right;
-  font-size: 28rpx;
+  font-size: 32rpx;
 
   padding: 10rpx 0rpx
 }

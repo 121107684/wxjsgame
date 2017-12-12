@@ -1,4 +1,5 @@
 //app.js
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -67,10 +68,7 @@ App({
       })
     }
   },
-  publichttp:(opt)=>{
-    wx.request({
-      url: "https://www.xunfengwx.com/"+opt.url,
-      
-    })
+  fspage:function(){
+    console.log(this)
   }
 })

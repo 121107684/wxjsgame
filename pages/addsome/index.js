@@ -1,4 +1,5 @@
 // pages/addsome/index.js
+const app = getApp()
 Page({
 
   /**
@@ -8,9 +9,12 @@ Page({
     array: ['中国', '美国', '巴西', '日本'],
     index: 0,
     date: '2016-09-01',
-    time: '12:01'
+    time: '12:01',
+    imagesArr: ['http://127.0.0.1:8088/Upload/1513259475000.jpg', 'http://127.0.0.1:8088/Upload/1513259475000.jpg','http://127.0.0.1:8088/Upload/1513260353000.jpg']
   },
-
+  savedata(){
+    console.log(this.data)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -79,12 +83,18 @@ Page({
         var imageSrc = res.tempFilePaths[0]
         
         const uploadTask = wx.uploadFile({
-          url: 'http://127.0.0.1:8088/upload/upimg',
+          url: app.globalData.urls+'/uploadfile/upimg',
           filePath: imageSrc,
           name: 'data',
           success: function (res) {
-            console.log('uploadImage success, res is:', res)
-
+            var imgArrthis=[]
+            var imgpath = app.globalData.urls + JSON.parse(res.data).data.img
+            self.data.imagesArr.push(imgpath)
+            var imgArrthis = self.data.imagesArr
+            console.log(imgArrthis)
+            self.setData({ imagesArr: imgArrthis})
+            
+            
             wx.showToast({
               title: '上传成功',
               icon: 'success',

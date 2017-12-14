@@ -8,13 +8,19 @@
   background: #fff;
 
 }
-.image-plus-vertical {
-  width: 160rpx;
-  height: 160rpx;
+.image-plus-nb {
+  width: 728rpx
+}
+.image-plus-vertical,
+.imagesbox {
+  width: 154rpx;
+  height: 154rpx;
   border: 6rpx dashed #efefef;
   border-radius: 24rpx;
   position: relative;
-  float: left
+  float: left;
+  margin-right: 16rpx;
+  margin-bottom: 16rpx
 }
 .image-plus-vertical::after ,
 .image-plus-vertical::before{
@@ -72,4 +78,8 @@
 }
 .weui-cells:before{
   border-top: none
+}
+.imagesbox image{
+  width: 154rpx;
+  height:154rpx  
 }

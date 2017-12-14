@@ -35,7 +35,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    urls:'http://127.0.0.1:8088'
   },
   getUserOpenId: function (callback) {
     var self = this

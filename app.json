@@ -1,11 +1,11 @@
 {
   "pages":[
-    
+    "pages/addsome/index",
     "pages/cantent/index",
     "pages/index/index",
     "pages/likeman/likeman",
     "pages/userlist/index",
-    "pages/addsome/index",
+    
     "pages/userinfo/index",
     "pages/usercode/index",
     "pages/setting/index",

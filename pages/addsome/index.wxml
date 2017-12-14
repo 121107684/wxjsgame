@@ -1,43 +1,47 @@
 <!--pages/addsome/index.wxml-->
 <view class="content">
   <view class="page-body">
-    <block wx:if="{{imageSrc}}">
-      <image src="{{imageSrc}}" class="image" mode="aspectFit"></image>
-    </block>
-    <view class="image-plus image-plus-nb clearfix" bindtap="chooseImage">
+    
+    <view class="image-plus image-plus-nb clearfix" >
+    <view wx:if="{{imagesArr.length>0}}" class="imagesbox" wx:for="{{imagesArr}}">
+      <image src="{{item}}" class="image" mode="aspectFit"></image>
+    </view>
       <view class="image-plus-horizontal"></view>
-      <view class="image-plus-vertical"></view>
+      <view class="image-plus-vertical" bindtap="chooseImage"></view>
     </view>
     <view style='clear:both'></view>
     <textarea class='textplace'></textarea>
   </view>
 
   <view class="setinfo">
-  <view class="weui-cells weui-cells_after-title">
-        <view class="weui-cell weui-cell_input">
-          <view class="weui-cell__hd">
-            <view class="weui-label">发布时间</view>
-          </view>
-          <view class="weui-cell__bd">
-            <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-01-01" bindchange="bindDateChange">
-              <view class="weui-input">{{date}}</view>
-            </picker>
-          </view>
-        </view>
-      </view>
     <view class="weui-cells weui-cells_after-title">
-        <view class="weui-cell weui-cell_input">
-          <view class="weui-cell__hd">
-            <view class="weui-label">谁可以看</view>
-          </view>
-          <view class="weui-cell__bd">
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-              <view class="weui-input">{{array[index]}}</view>
-            </picker>
-          </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">发布时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-01-01" bindchange="bindDateChange">
+            <view class="weui-input">{{date}}</view>
+          </picker>
         </view>
       </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">谁可以看</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="weui-input">{{array[index]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
   </view>
-    
+  <view class="">
+    <view bindtap='savedata' class='btn btn-block'>发布</view>
+  </view>
 
 </view>

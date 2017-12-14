@@ -2,3 +2,32 @@
 @import "./pages/component/nav/index.wxss";
 @import "./pages/common/lib/weui.wxss";
 .clearfix{overflow:hidden;_zoom:1;}
+.btn{
+  margin: 22rpx;
+  background-color: #fedc00;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  height: 96rpx;
+  text-align: center;
+  line-height: 96rpx;
+  display: block;
+  border-radius: 10rpx
+}
+.btn::after,
+.btn::before{
+  content: " ";
+  background-color:#fff;
+  display: block;
+  position: absolute;
+  top:10rpx;
+  right: 48rpx;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 6rpx
+}
+.btn::before {
+  right: 10rpx;
+  width: 24rpx
+}

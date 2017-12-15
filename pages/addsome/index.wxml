@@ -1,27 +1,30 @@
 <!--pages/addsome/index.wxml-->
 <view class="content">
   <view class="page-body">
-    
-    <view class="image-plus image-plus-nb clearfix" >
-    <view wx:if="{{imagesArr.length>0}}" class="imagesbox" wx:for="{{imagesArr}}">
-      <image src="{{item}}" class="image" mode="aspectFit"></image>
-    </view>
+
+    <view class="image-plus image-plus-nb clearfix">
+      <view wx:if="{{imagesArr.length>0}}" class="imagesbox" wx:for="{{imagesArr}}">
+        <image src="{{item}}" class="image" mode="aspectFit"></image>
+      </view>
       <view class="image-plus-horizontal"></view>
       <view class="image-plus-vertical" bindtap="chooseImage"></view>
     </view>
     <view style='clear:both'></view>
-    <textarea class='textplace'></textarea>
+    <textarea class='textplace' value="{{arttext}}"></textarea>
   </view>
 
   <view class="setinfo">
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
         <view class="weui-cell__hd">
-          <view class="weui-label">发布时间</view>
+          <view class="weui-label">坐标</view>
         </view>
         <view class="weui-cell__bd">
-          <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-01-01" bindchange="bindDateChange">
-            <view class="weui-input">{{date}}</view>
+          <picker mode="multiSelector" bindchange="gamearea" bindcolumnchange="gameareain"
+            value="{{areadata}}" range="{{objectMultiArray}}" range-key="{{'name'}}">
+            <view class="picker weui-input">
+              {{objectMultiArray[0][areadata[0]].name}}--{{objectMultiArray[1][areadata[1]].name}}
+            </view>
           </picker>
         </view>
       </view>
@@ -32,8 +35,8 @@
           <view class="weui-label">谁可以看</view>
         </view>
         <view class="weui-cell__bd">
-          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-            <view class="weui-input">{{array[index]}}</view>
+          <picker bindchange="bindPickerChange" value="{{whocansee}}" range="{{array}}">
+            <view class="weui-input">{{array[whocansee]}}</view>
           </picker>
         </view>
       </view>

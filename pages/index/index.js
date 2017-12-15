@@ -4,32 +4,18 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    list: [{
-      id: 'tc',
-      name: '天策'
-    },{
-      id: 'cj',
-      name: '藏剑'
-    },{
-      id: 'wd',
-      name: '五毒'
-    }, {
-      id: 'wh',
-      name: '万花'
-    }]
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   toast: function (event) {
     console.log(event)
     wx.request({
-      url: 'https://www.dangdang.com/login/login', //仅为示例，并非真实的接口地址
+      url: app.globalData.urls+'/login/login', //仅为示例，并非真实的接口地址
       data: {
         x: 'baiyang',
-        y: '123456'
+        y: '123456' 
       },
       header: {
         'content-type': 'application/json' // 默认值

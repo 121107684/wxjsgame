@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <import src="../component/nav/index.wxml" />
 <template is="nav" data="{{ ...__lgpanel__ }}" />
-<view class="container clearfix">
+<button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取授权（头像昵称）</button>
+<view wx:else class="container clearfix">
   <view class="panel">
     <view class='panel-heading'>
       <view class='userico'>

@@ -3,14 +3,14 @@
   <view class="page-body">
 
     <view class="image-plus image-plus-nb clearfix">
-      <view wx:if="{{imagesArr.length>0}}" class="imagesbox" wx:for="{{imagesArr}}">
+      <view wx:if="{{imagesArr.length>0}}" class="imagesbox" wx:for="{{imagesArr}}" wx:key>
         <image src="{{item}}" class="image" mode="aspectFit"></image>
       </view>
       <view class="image-plus-horizontal"></view>
       <view class="image-plus-vertical" bindtap="chooseImage"></view>
     </view>
     <view style='clear:both'></view>
-    <textarea class='textplace' value="{{arttext}}"></textarea>
+    <textarea class='textplace' value="{{arttext}}" bindinput="arttextinput"></textarea>
   </view>
 
   <view class="setinfo">

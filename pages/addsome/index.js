@@ -13,7 +13,7 @@ Page({
         {
           id: 0,
           name: '无脊柱动物'
-        },
+        }, 
         {
           id: 1,
           name: '脊柱动物'
@@ -43,6 +43,12 @@ Page({
     ],
     areadata: [0, 0],
     arttext:'测试文章'
+  },
+  arttextinput:function(e){
+    console.log(e)
+    this.setData({
+      arttext: e.detail.value
+    })
   },
   gamearea: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -83,13 +89,14 @@ Page({
         break;
     }
     this.setData(data);
-  },
-
+  },  
   savedata(){
     console.log(this.data)
     wx.request({
       url: app.globalData.urls+"/article/addnew",
-      data: {
+      method:'POST',
+      data: { 
+        openidu: app.globalData.userInfo.openid,
         imagesArr: this.data.imagesArr,
         whocansee: this.data.whocansee,
         areadata: this.data.areadata,

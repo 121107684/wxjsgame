@@ -114,3 +114,6 @@
 .footerico .sayyou .iconfont{
   padding-right: 6rpx
 }
+.btn{
+  margin-top: 200rpx;
+}

@@ -8,13 +8,13 @@ App({
     wx.setStorageSync('logs', logs)
     const self = this
     // 登录
-    wx.login({
+    wx.login({ 
       success: function (data) {
         console.log(data)
         const jscode = data.code
         wx.getSetting({ 
           success: res => {
-            console.log(res) 
+            console.log(res)  
             if (res.authSetting['scope.userInfo']) {
               // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
               wx.getUserInfo({ 
@@ -35,7 +35,7 @@ App({
                     }
                   })
 
-
+                  
                   // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
                   // 所以此处加入 callback 以防止这种情况
                   if (self.userInfoReadyCallback) {
@@ -70,7 +70,7 @@ App({
         console.log('wx.login 接口调用失败，将无法正常使用开放接口等服务', err)
         callback(err)
       }
-    })
+    }) 
 
     // 获取用户信息
 
@@ -85,13 +85,14 @@ App({
     if (self.globalData.openid) {
       callback(null, self.globalData.openid)
     } else {
-    }
-  },
+       
+    } 
+  }, 
   globalgetuser: function (passdata) {
     var self = this
     wx.login({
       success: function (res) {
-        console.log(res)
+        console.log(res) 
         var jscode = res.code
         wx.request({
           url: self.globalData.urls + '/login/login',

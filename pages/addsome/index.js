@@ -90,24 +90,24 @@ Page({
     }
     this.setData(data);
   },  
-  savedata(){
-    console.log(this.data)
+  savedata(){ 
+    console.log(app.globalData.userInfo.openid)
     wx.request({
       url: app.globalData.urls+"/article/addnew",
       method:'POST',
-      data: { 
+      data: {
         openidu: app.globalData.userInfo.openid,
         imagesArr: this.data.imagesArr,
         whocansee: this.data.whocansee,
         areadata: this.data.areadata,
         arttext: this.data.arttext
-      },
+      },  
       success: function (res) {
         console.log(res)
-      }
-    })
-  },
-  /**
+      }  
+    }) 
+  }, 
+  /** 
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {

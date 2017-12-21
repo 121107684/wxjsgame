@@ -17,7 +17,7 @@ Page({
     wx.navigateTo({ 
       url: '../likeman/likeman'
     }) 
-  },
+  }, 
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
